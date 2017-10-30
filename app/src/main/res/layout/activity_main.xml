@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.khowoatt.homebakery.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/barMain"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnMenu"
+        android:layout_width="@dimen/icon"
+        android:layout_height="@dimen/icon"
+        android:layout_marginLeft="6dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/iconback"
+        android:onClick="onClickMenu"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlHardcoded" />
+
+    <Button
+        android:id="@+id/btnCart"
+        android:layout_width="@dimen/icon"
+        android:layout_height="@dimen/icon"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/iconbasket"
+        android:onClick="onClickcart"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/titleMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="serif"
+        android:lineSpacingExtra="24sp"
+        android:text="@string/title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button"
+        android:textColor="@color/nameapp"
+        android:textSize="24sp"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintLeft_toRightOf="@+id/btnMenu"
+        app:layout_constraintRight_toLeftOf="@+id/btnCart"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UnusedAttribute" />
+
+    <ScrollView
+        android:layout_width="380dp"
+        android:layout_height="520dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barMain"
+        app:layout_constraintVertical_bias="0.32">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imvmenupastry"
+                android:layout_width="wrap_content"
+                android:layout_height="155dp"
+                android:layout_weight="1"
+                android:contentDescription=""
+                android:onClick="onClickCake"
+                app:layout_constraintBottom_toTopOf="@+id/imvmenusnack"
+                app:layout_constraintTop_toBottomOf="@+id/imvmenucake"
+                app:srcCompat="@drawable/pastry"
+                tools:ignore="ContentDescription"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <ImageView
+                android:id="@+id/imvmenucake"
+                android:layout_width="wrap_content"
+                android:layout_height="155dp"
+                android:layout_weight="1"
+                android:onClick="onClickPastry"
+                app:layout_constraintBottom_toTopOf="@+id/imvmenupastry"
+                app:layout_constraintTop_toBottomOf="@+id/btnMenu"
+                app:srcCompat="@drawable/cake"
+                tools:ignore="ContentDescription"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <ImageView
+                android:id="@+id/imvmenubread"
+                android:layout_width="match_parent"
+                android:layout_height="155dp"
+                android:onClick="onClickBread"
+                app:srcCompat="@drawable/bread"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/imvmenusnack"
+                android:layout_width="wrap_content"
+                android:layout_height="155dp"
+                android:layout_weight="1"
+                android:onClick="onClickSnack"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imvmenupastry"
+                app:srcCompat="@drawable/snackbox"
+                tools:ignore="ContentDescription" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,24 @@
+<resources>
+
+    <string name="app_name">HomeBakery</string>
+    <string name="title">HomeBakery</string>
+    <string name="user">ชื่อผู้ใช้</string>
+    <string name="pass">รหัสผ่าน</string>
+    <string name="login">เข้าสู่ระบบ</string>
+    <string name="phone">เบอร์โทรศัพท์</string>
+    <string name="register">สมัครสมาชิก</string>
+    <string name="add">เพิ่ม</string>
+    <string name="detail">รายละเอียด</string>
+    <string name="bath">บาท</string>
+    <string name="total">ระบุจำนวน</string>
+    <string name="addorder">เพิ่มลงตะกร้าสินค้า</string>
+    <string name="listname">ชื่อ</string>
+    <string name="listprice">ราคา</string>
+    <string name="regis">สมัครสมาชิก</string>
+    <string name="regisemail">อีเมล์</string>
+    <string name="regisconfirm">ConfirmPassword:</string>
+    <string name="titleregis">ข้อมูลส่วนตัว</string>
+    <string name="createpass">สร้างรหัสผ่านของคุณ</string>
+    <string name="comfirmregis">พิมพ์รหัสผ่านอีกครั้ง</string>
+
+</resources>
